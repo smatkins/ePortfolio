@@ -17,10 +17,10 @@ import itertools
 #######################################################################
 
 def weather_data_for_stations(dataset = 'local-climatological-data',
-                        stationList = ['72307513769'], 
-                        startDateList = ['1974-01-01'],
-                        endDateList = ['2022-11-10'],
-                        dataTypesList = ['HourlyDryBulbTemperature', 'Sunrise', 'Sunset'], 
+                        stationList = [''], 
+                        startDateList = [''],
+                        endDateList = [''],
+                        dataTypesList = [''], 
                         format = 'json',
                         units = '',
                         includeAttributes = '', 
@@ -199,5 +199,5 @@ weather['HourlyApparentTemperature'] = apparents
 # Final Dataframe With All Calculations
 ####################################################################
 
-weather.to_csv('weather,.csv', index = False)
+print(weather)
 
